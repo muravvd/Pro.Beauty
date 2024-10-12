@@ -1,0 +1,61 @@
+// @ts-ignore
+import logo from "../components/favouritelogo.png";
+import { AppointmentT } from "./interfaces";
+
+export const AppointmentsListMock: AppointmentT[] = [
+  {
+    id: 1,
+    title: "Название",
+    imageUrl: logo,
+    address: "Жопа мира",
+    price: 2000,
+    service: "Стрижка",
+    date: "28 Мая, Сб",
+    time: "16:30-17:30",
+    duration: "(1 час)",
+  },
+  {
+    id: 2,
+    title: "Второе название",
+    imageUrl: logo,
+    address: "Жопа мира",
+    price: 2000,
+    service: "Стрижка",
+    date: "28 Мая, Сб",
+    time: "16:30-17:30",
+    duration: "(1 час)",
+  },
+  {
+    id: 3,
+    title: "Dungeon",
+    imageUrl: logo,
+    address: "Gym",
+    price: 300,
+    service: "Fisting",
+    date: "В любую ночь",
+    time: "В любое время",
+    duration: "Навсегда",
+  },
+  {
+    id: 4,
+    title: "Название",
+    imageUrl: logo,
+    address: "Жопа мира",
+    price: 2000,
+    service: "Стрижка",
+    date: "28 Мая, Сб",
+    time: "16:30-17:30",
+    duration: "(1 час)",
+  },
+  {
+    id: 5,
+    title: "Пятое название",
+    imageUrl: logo,
+    address: "Жопа мира",
+    price: 2000,
+    service: "Стрижка",
+    date: "28 Мая, Сб",
+    time: "16:30-17:30",
+    duration: "(1 час)",
+  },
+];

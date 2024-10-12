@@ -1,0 +1,21 @@
+build:
+  when: always
+  stage: build
+  image: node:18
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+
+
+deploy:
+  when: manual
+  stage: deploy
+  image: node:18
+  script:
+    - npm install -g netlify-cli
+    - netlify deploy --site $NETLIFY_STAGING_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir=build --prod
+  only:
+    - main

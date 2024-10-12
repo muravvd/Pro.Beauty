@@ -1,0 +1,1 @@
+export type UserRequestBodyT = { username: string, password: string }
